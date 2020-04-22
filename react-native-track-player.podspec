@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,swift}"
 
   s.swift_version = "5.0"
+  s.exclude_files = ["ios/RNTrackPlayer/Vendor/AudioPlayer/Example"]
+
 
   s.dependency "React"
   s.dependency "SwiftAudio", "~> 0.11.0"
