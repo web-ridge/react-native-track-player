@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage = package["repository"]["url"]
   s.platform = :ios, "10.0"
 
-  s.source = { :git => package["repository"]["url"], :tag => "v#{s.version}" }
+  s.source = { :git => package["repository"]["url"], :branch => "master" }
   s.source_files = "ios/**/*.{h,m,swift}"
 
   s.swift_version = "5.0"
